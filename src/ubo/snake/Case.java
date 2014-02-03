@@ -1,5 +1,5 @@
 package ubo.snake;
-
+//Define the constants Here
 public class Case implements Constantes {
 
       private int xIndice;
@@ -39,11 +39,11 @@ public class Case implements Constantes {
       public int getY() {
             return this.yIndice * CASE_EN_PIXELS;
       }
-
+      // Width Size in Pixels 
       public int getLargeur() {
             return CASE_EN_PIXELS;
       }
-
+      // Hight Size in Pixels
       public int getHauteur() {
             return CASE_EN_PIXELS;
       }
@@ -53,7 +53,7 @@ public class Case implements Constantes {
             return this.xIndice >= 0 && this.xIndice < NBRE_DE_COLONNES
                    && this.yIndice >= 0 && this.yIndice < NBRE_DE_LIGNES;
       }
-      
+      //Return false if case doesn't contain the box 
       @Override
       public boolean equals(Object obj) {
             if (obj instanceof Case) {
